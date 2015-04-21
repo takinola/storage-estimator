@@ -1,0 +1,69 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#estimatorApp {
+  height: 100%;
+}
+
+#app-box {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: white;
+}
+
+#message-box {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  left: 100px;
+  z-index: 5;
+  padding-top: 10px;
+  border-radius: 5px;
+  background-color: #fefefe;
+  border-color: #f1f1f1;
+  border-style: solid;
+  border-width: thin;
+}
+
+#message-box .modal {
+  display: block;
+  top: 50px;
+}
+
+#calculator-box {
+  background-color: white;
+  height: 100%;
+}
+
+#calculated-result {
+  background-color: #6699ff;
+  border-radius: 5px;
+  height: 250px;
+  width:400px;
+  color: white;
+  font-size: 3em;
+  font-weight: 1.5;
+  margin-left: 80px;
+}
+
+#storage-result {
+  font-size: 1.5em;
+  font-weight: 1.5;
+  color: white;
+}
+
+.warning-text {
+  color: red;
+}
+
+.spacer {
+  margin-top: 10px;
+}
+
+.closeButton {
+  color: red;
+  font-size: 1.4em;
+}
