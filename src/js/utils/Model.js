@@ -27,7 +27,6 @@
       var contentArchived = storageSubTotal * archivePercentage / 100;
       var storageMonthly = storageSubTotal - contentArchived;
       var totalStorage = storageMonthly * period;
-      //var totalStorageGB = totalStorageMB / 1024;
       storageByUseCase[section] = totalStorage;
     });
 
@@ -51,99 +50,99 @@
     switch(useCase){
       case "uc1":
         // account management
-        activeUserPercentage = 30;
-        publisherPercentage = 30;
-        documentsUploaded = 25;
+        activeUserPercentage = 20;
+        publisherPercentage = 20;
+        documentsUploaded = 5;
         averageDocumentSize = 3;
         videosUploaded = 0.083;
         averageVideoSize = 20;
         break;
       case "uc2":
         // customer and partner engagement
-        activeUserPercentage = 30;
-        publisherPercentage = 30;
-        documentsUploaded = 25;
+        activeUserPercentage = 20;
+        publisherPercentage = 20;
+        documentsUploaded = 5;
         averageDocumentSize = 3;
         videosUploaded = 0.083;
         averageVideoSize = 20;
         break;
       case "uc3":
         // education center
-        activeUserPercentage = 50;
-        publisherPercentage = 15;
-        documentsUploaded = 25;
+        activeUserPercentage = 35;
+        publisherPercentage = 10;
+        documentsUploaded = 5;
         averageDocumentSize = 3;
         videosUploaded = 0.083;
         averageVideoSize = 20;
         break;
       case "uc4":
         // help and support
-        activeUserPercentage = 50;
-        publisherPercentage = 15;
-        documentsUploaded = 25;
+        activeUserPercentage = 35;
+        publisherPercentage = 10;
+        documentsUploaded = 5;
         averageDocumentSize = 3;
         videosUploaded = 0.083;
         averageVideoSize = 20;
         break;
       case "uc5":
         // knowledge sharing
-        activeUserPercentage = 70;
-        publisherPercentage = 15;
-        documentsUploaded = 25;
+        activeUserPercentage = 45;
+        publisherPercentage = 10;
+        documentsUploaded = 5;
         averageDocumentSize = 3;
         videosUploaded = 0.083;
         averageVideoSize = 20;
         break;
       case "uc6":
         // mentoring and coaching
-        activeUserPercentage = 70;
-        publisherPercentage = 15;
-        documentsUploaded = 25;
+        activeUserPercentage = 45;
+        publisherPercentage = 10;
+        documentsUploaded = 5;
         averageDocumentSize = 3;
         videosUploaded = 0.083;
         averageVideoSize = 20;
         break;
       case "uc7":
         // opportunity deal room
-        activeUserPercentage = 70;
-        publisherPercentage = 30;
-        documentsUploaded = 25;
+        activeUserPercentage = 45;
+        publisherPercentage = 20;
+        documentsUploaded = 5;
         averageDocumentSize = 3;
         videosUploaded = 0.083;
         averageVideoSize = 20;
         break;
       case "uc8":
         // order to cash
-        activeUserPercentage = 70;
-        publisherPercentage = 15;
-        documentsUploaded = 25;
+        activeUserPercentage = 45;
+        publisherPercentage = 10;
+        documentsUploaded = 5;
         averageDocumentSize = 3;
         videosUploaded = 0.083;
         averageVideoSize = 20;
         break;
       case "uc9":
         // planning and implementation
-        activeUserPercentage = 70;
-        publisherPercentage = 15;
-        documentsUploaded = 25;
+        activeUserPercentage = 45;
+        publisherPercentage = 10;
+        documentsUploaded = 5;
         averageDocumentSize = 3;
         videosUploaded = 0.083;
         averageVideoSize = 20;
         break;
       case "uc10":
         // service request
-        activeUserPercentage = 70;
-        publisherPercentage = 15;
-        documentsUploaded = 25;
+        activeUserPercentage = 45;
+        publisherPercentage = 10;
+        documentsUploaded = 5;
         averageDocumentSize = 3;
         videosUploaded = 0.083;
         averageVideoSize = 20;
         break;
       case "uc11":
         // help and support
-        activeUserPercentage = 70;
-        publisherPercentage = 40;
-        documentsUploaded = 25;
+        activeUserPercentage = 45;
+        publisherPercentage = 30;
+        documentsUploaded = 5;
         averageDocumentSize = 3;
         videosUploaded = 0.083;
         averageVideoSize = 20;

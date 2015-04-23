@@ -12,12 +12,12 @@
       storageEstimated: 0,
       seatLicenseSold: 0,
       contractPeriod: 36,
-      archivePercentage: 0,
+      archivePercentage: 10,
       custom: {
         disable: true,
         activeUserPercentage: 30,
-        publisherPercentage: 30,
-        documentsUploaded: 25,
+        publisherPercentage: 20,
+        documentsUploaded: 5,
         averageDocumentSize: 3,
         videosUploaded: 0.083,
         averageVideoSize: 20
