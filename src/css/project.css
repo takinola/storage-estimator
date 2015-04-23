@@ -67,3 +67,8 @@ html, body {
   color: red;
   font-size: 1.4em;
 }
+
+a.disabled {
+  pointer-events: none;
+  color: #333333 !important;
+}

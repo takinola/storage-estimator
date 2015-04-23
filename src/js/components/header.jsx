@@ -19,7 +19,11 @@
     },
 
     render: function(){
+      var disabledGuidance = this.props.data.displayMessage ? "disabled" : "";
+      var disabledEstimator = this.props.data.displayMessage ? "" : "disabled";
+
       return (
+
         <nav className="navbar navbar-inverse">
           <div className="container-fluid">
             {/* Brand and toggle get grouped for better mobile display */}
@@ -36,8 +40,8 @@
             {/* Collect the nav links, forms, and other content for toggling */}
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul className="nav navbar-nav navbar-right">
-                <li><a href="#" data-show="guidance" onClick={this._handleClick}>Guidance</a></li>
-                <li><a href="#" data-show="estimator" onClick={this._handleClick}>Estimator</a></li>
+                <li><a href="#" className={disabledGuidance} data-show="guidance" onClick={this._handleClick}>Guidance</a></li>
+                <li><a href="#" className={disabledEstimator} data-show="estimator" onClick={this._handleClick}>Estimator</a></li>
               </ul>
             </div>{/* .navbar-collapse */}
           </div>{/* .container-fluid */}

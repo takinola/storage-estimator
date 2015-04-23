@@ -819,7 +819,11 @@
 	    },
 
 	    render: function(){
+	      var disabledGuidance = this.props.data.displayMessage ? "disabled" : "";
+	      var disabledEstimator = this.props.data.displayMessage ? "" : "disabled";
+
 	      return (
+
 	        React.createElement("nav", {className: "navbar navbar-inverse"}, 
 	          React.createElement("div", {className: "container-fluid"}, 
 	            /* Brand and toggle get grouped for better mobile display */
@@ -836,8 +840,8 @@
 	            /* Collect the nav links, forms, and other content for toggling */
 	            React.createElement("div", {className: "collapse navbar-collapse", id: "bs-example-navbar-collapse-1"}, 
 	              React.createElement("ul", {className: "nav navbar-nav navbar-right"}, 
-	                React.createElement("li", null, React.createElement("a", {href: "#", "data-show": "guidance", onClick: this._handleClick}, "Guidance")), 
-	                React.createElement("li", null, React.createElement("a", {href: "#", "data-show": "estimator", onClick: this._handleClick}, "Estimator"))
+	                React.createElement("li", null, React.createElement("a", {href: "#", className: disabledGuidance, "data-show": "guidance", onClick: this._handleClick}, "Guidance")), 
+	                React.createElement("li", null, React.createElement("a", {href: "#", className: disabledEstimator, "data-show": "estimator", onClick: this._handleClick}, "Estimator"))
 	              )
 	            )/* .navbar-collapse */
 	          )/* .container-fluid */
