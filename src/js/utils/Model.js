@@ -13,9 +13,9 @@
       var activeUserPercentage = assumptions.activeUserPercentage;
       var publisherPercentage = assumptions.publisherPercentage;
       var documentsUploaded = assumptions.documentsUploaded;
-      var averageDocumentSize = assumptions.averageDocumentSize;
+      var averageDocumentSize = assumptions.averageDocumentSize * 1048576;  // convert to bytes
       var videosUploaded = assumptions.videosUploaded;
-      var averageVideoSize = assumptions.averageVideoSize;
+      var averageVideoSize = assumptions.averageVideoSize * 1048576;  // convert to bytes
 
       var activeUsers = users * activeUserPercentage / 100;
       var publishers = activeUsers * publisherPercentage / 100;
@@ -26,15 +26,15 @@
       var storageSubTotal = documentStorageMonthly + videoStorageMonthly;
       var contentArchived = storageSubTotal * archivePercentage / 100;
       var storageMonthly = storageSubTotal - contentArchived;
-      var totalStorageMB = storageMonthly * period;
-      var totalStorageGB = totalStorageMB / 1024;
-      storageByUseCase[section] = totalStorageGB;
+      var totalStorage = storageMonthly * period;
+      //var totalStorageGB = totalStorageMB / 1024;
+      storageByUseCase[section] = totalStorage;
     });
 
     var scalingFactor = 40;  // fudge factor applied to secondary use case
     var result = storageByUseCase.primaryUseCase + storageByUseCase.secondaryUseCase * scalingFactor / 100;
     result = parseInt(result);
-    return {value: result, unit: "GB"};
+    return result;
   }
 
   module.exports = model;

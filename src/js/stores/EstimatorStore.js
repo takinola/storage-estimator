@@ -9,10 +9,7 @@
   var estimatorData = {
     displayMessage: true,
     calculator: {
-      storageEstimated: {
-        value: 0,
-        unit: "GB"
-      },
+      storageEstimated: 0,
       seatLicenseSold: 0,
       contractPeriod: 36,
       archivePercentage: 0,

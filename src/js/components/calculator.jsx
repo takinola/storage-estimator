@@ -2,7 +2,7 @@
   var React = require("react")
   , _ = require("underscore")
   , EstimatorActions = require("../actions/EstimatorActions.js")
-  , Model = require("../utils/Model.js")
+  , numeral = require("numeral")
   ;
 
   var Calculator = React.createClass({
@@ -38,46 +38,7 @@
     },
 
     _formatValue: function(value){
-      var hundreds = value % 1000;
-      var thousands = ((value - hundreds) % 1000000) / 1000;
-      var millions = ((value - thousands * 1000 - hundreds)) / 1000000;
-      var flag, result;
-      if(value < 1000){flag = 1}
-      if(value >= 1000 && value < 1000000){flag = 2}
-      if(value >= 1000000){flag = 3}
-
-      switch(flag){
-        case 1:
-          result = hundreds;
-          break;
-        case 2:
-          if(hundreds.length < 3){
-            do {
-              hundreds = "0" + hundreds.toString();
-            }
-            while(hundreds.length < 3)
-          }
-          result = thousands + "," + hundreds;
-          break;
-        case 3:
-          if(hundreds.toString().length < 3){
-            do {
-              hundreds = "0" + hundreds.toString();
-            }
-            while(hundreds.length < 3)
-          }
-
-          if(thousands.toString().length < 3){
-            do {
-              thousands = "0" + thousands.toString();
-            }
-            while(thousands.length < 3)
-          }
-
-          result = millions + "," + thousands + "," + hundreds;
-      }
-
-      return result;
+      return numeral(value).format("0.0 b");  // format result in KB, MB or TB as appropriate
     },
 
     _handleChange: function(e){
@@ -247,7 +208,7 @@
             </div>
             <div className="col-md-4" id="calculated-result">
               <h3 className="text-center">Estimated Storage Required</h3>
-              {<p className="text-center" id="storage-result">{this._formatValue(this.props.data.calculator.storageEstimated.value)} {this.props.data.calculator.storageEstimated.unit}</p>}
+              {<p className="text-center" id="storage-result">{this._formatValue(this.props.data.calculator.storageEstimated)}</p>}
             </div>
           </div>
 
