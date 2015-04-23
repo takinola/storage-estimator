@@ -213,7 +213,7 @@
           </div>
 
           <div className="row">
-            <div className="col-md-10 col-md-offset-1">
+            <div className="col-md-6 col-md-offset-3">
               <div className="page-header">
                 <h3>Custom settings <small> activate by selecting "Custom Setting" for one of the use cases</small></h3>
               </div>
@@ -221,48 +221,48 @@
               <form className="form-horizontal">
                 <fieldset disabled={currentState.calculator.custom.disable}>
                   <div className="form-group">
-                    <label htmlFor="activeUserPercentage" className="col-sm-2 control-label">Percentage of active users</label>
-                    <div className="col-sm-6 input-group">
+                    <label htmlFor="activeUserPercentage" className="col-sm-4 control-label">Percentage of active users</label>
+                    <div className="col-sm-5 input-group">
                       <input type="text" min="0" max="100" className="form-control" id="activeUserPercentage" value={custom.activeUserPercentage} onChange={this._handleChange} />
                       <div className="input-group-addon">%</div>
                     </div> 
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="publisherPercentage" className="col-sm-2 control-label">Percentage of publishers</label>
-                    <div className="col-sm-6 input-group">
+                    <label htmlFor="publisherPercentage" className="col-sm-4 control-label">Percentage of publishers</label>
+                    <div className="col-sm-5 input-group">
                       <input type="text" min="0" max="100" className="form-control" id="publisherPercentage" value={custom.publisherPercentage} onChange={this._handleChange} />
                       <div className="input-group-addon">%</div>
                     </div> 
                   </div>                  
 
                   <div className="form-group">
-                    <label htmlFor="documentsUploaded" className="col-sm-2 control-label">Documents uploaded</label>
-                    <div className="col-sm-6 input-group">
+                    <label htmlFor="documentsUploaded" className="col-sm-4 control-label">Documents uploaded</label>
+                    <div className="col-sm-5 input-group">
                       <input type="text" min="0" step="1" className="form-control" id="documentsUploaded" value={custom.documentsUploaded} onChange={this._handleChange} />
                       <div className="input-group-addon">per publisher per month</div>
                     </div> 
                   </div> 
 
                   <div className="form-group">
-                    <label htmlFor="averageDocumentSize" className="col-sm-2 control-label">Average document size</label>
-                    <div className="col-sm-6 input-group">
+                    <label htmlFor="averageDocumentSize" className="col-sm-4 control-label">Average document size</label>
+                    <div className="col-sm-5 input-group">
                       <input type="text" min="0" className="form-control" id="averageDocumentSize" value={custom.averageDocumentSize} onChange={this._handleChange} />
                       <div className="input-group-addon">MB</div>
                     </div> 
                   </div> 
 
                   <div className="form-group">
-                    <label htmlFor="videosUploaded" className="col-sm-2 control-label">Videos uploaded</label>
-                    <div className="col-sm-6 input-group">
+                    <label htmlFor="videosUploaded" className="col-sm-4 control-label">Videos uploaded</label>
+                    <div className="col-sm-5 input-group">
                       <input type="text" min="0" step="1" className="form-control" id="videosUploaded" value={custom.videosUploaded} onChange={this._handleChange} />
                       <div className="input-group-addon">per publisher per month</div>
                     </div> 
                   </div> 
 
                   <div className="form-group">
-                    <label htmlFor="averageVideoSize" className="col-sm-2 control-label">Average video size</label>
-                    <div className="col-sm-6 input-group">
+                    <label htmlFor="averageVideoSize" className="col-sm-4 control-label">Average video size</label>
+                    <div className="col-sm-5 input-group">
                       <input type="text" min="0" className="form-control" id="averageVideoSize" value={custom.averageVideoSize} onChange={this._handleChange} />
                       <div className="input-group-addon">MB</div>
                     </div> 

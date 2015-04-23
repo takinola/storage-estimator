@@ -15,7 +15,7 @@
       archivePercentage: 10,
       custom: {
         disable: true,
-        activeUserPercentage: 30,
+        activeUserPercentage: 20,
         publisherPercentage: 20,
         documentsUploaded: 5,
         averageDocumentSize: 3,
