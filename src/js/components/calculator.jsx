@@ -189,7 +189,7 @@
                     <select className="form-control" id="secondaryUseCase" value={secondaryUseCase.value} onChange={this._handleChange}>
                       <option value="uc1" disabled={sstatus.uc1}>Account Management</option>
                       <option value="uc2" disabled={sstatus.uc2}>Customer and Partner Engagement</option>
-                      <option value="uc3" disabled={pstatus.uc3}>Education Center</option>
+                      <option value="uc3" disabled={sstatus.uc3}>Education Center</option>
                       <option value="uc4" disabled={sstatus.uc4}>Help and Support</option>
                       <option value="uc5" disabled={sstatus.uc5}>Knowledge Sharing</option>
                       <option value="uc6" disabled={sstatus.uc6}>Mentoring and Coaching</option>

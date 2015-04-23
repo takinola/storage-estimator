@@ -651,7 +651,7 @@
 	                    React.createElement("select", {className: "form-control", id: "secondaryUseCase", value: secondaryUseCase.value, onChange: this._handleChange}, 
 	                      React.createElement("option", {value: "uc1", disabled: sstatus.uc1}, "Account Management"), 
 	                      React.createElement("option", {value: "uc2", disabled: sstatus.uc2}, "Customer and Partner Engagement"), 
-	                      React.createElement("option", {value: "uc3", disabled: pstatus.uc3}, "Education Center"), 
+	                      React.createElement("option", {value: "uc3", disabled: sstatus.uc3}, "Education Center"), 
 	                      React.createElement("option", {value: "uc4", disabled: sstatus.uc4}, "Help and Support"), 
 	                      React.createElement("option", {value: "uc5", disabled: sstatus.uc5}, "Knowledge Sharing"), 
 	                      React.createElement("option", {value: "uc6", disabled: sstatus.uc6}, "Mentoring and Coaching"), 
