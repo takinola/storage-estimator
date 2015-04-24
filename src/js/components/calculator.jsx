@@ -213,7 +213,7 @@
           </div>
 
           <div className="row">
-            <div className="col-md-6 col-md-offset-3">
+            <div className="col-md-6 col-md-offset-1">
               <div className="page-header">
                 <h3>Custom settings <small> activate by selecting "Custom Setting" for one of the use cases</small></h3>
               </div>
